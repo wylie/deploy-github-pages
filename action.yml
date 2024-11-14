@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Simple Deploy to GitHub Pages
 author: Wylie Fisher
 description: Deploy a static site to GitHub Pages
 runs: node20
