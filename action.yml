@@ -1,9 +1,16 @@
 name: Simple Deploy to GitHub Pages
 author: Wylie Fisher
 description: Deploy a static site to GitHub Pages
+inputs:
+  github_token:
+    description: 'GitHub Token'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
 branding:
-  icon: upload-cloud
-  color: green
+  icon: 'upload-cloud'
+  color: 'blue'
 on:
   push:
     branches:
@@ -42,4 +49,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
