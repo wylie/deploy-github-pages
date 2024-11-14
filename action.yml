@@ -1,7 +1,8 @@
 name: Simple Deploy to GitHub Pages
 author: Wylie Fisher
 description: Deploy a static site to GitHub Pages
-runs: node20
+runs:
+  using: node20
 branding:
   icon: upload-cloud
   color: green
